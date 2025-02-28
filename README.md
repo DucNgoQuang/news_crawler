@@ -2,12 +2,15 @@
 
 ## Setup Instructions
 
-1. Install the required Python packages:
+1. Python:  3.10. 
+You can download it from [python.org](https://www.python.org/downloads/release/python-3100/).
+
+2. Install the required Python packages:
     ```sh
     pip install -r requirements.txt
     ```
 
-2. Run the entry point script to start the application UI and Apache Airflow server:
+3. Run the entry point script to start the application UI and Apache Airflow server:
     ```sh
     ./entrypoint.sh
     ```

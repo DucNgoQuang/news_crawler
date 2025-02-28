@@ -47,10 +47,12 @@ def change_cur_setting():
             sys_prompt = sys_prompt_file.getvalue()
             with open(sys_prompt_file_path, 'wb') as f :
                 f.write(sys_prompt)
+        st.write("Changes have been made successfully")
 
 
 def show_files():
     files = os.listdir(file_parent_dir)
+    files.sort()
     file = st.selectbox("Choose a file" , files)
     if file : 
         with open(file_parent_dir + "/" +file,encoding= 'utf-8') as f :
